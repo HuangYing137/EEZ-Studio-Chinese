@@ -1,0 +1,25 @@
+name: 本地化资源检查
+
+on:
+  push:
+    branches:
+      - main
+      - i18n-foundation
+  pull_request:
+    branches:
+      - main
+      - i18n-foundation
+
+jobs:
+  validate-translation-resources:
+    name: 检查简体中文资源格式
+    runs-on: ubuntu-latest
+    steps:
+      - name: 获取源码
+        uses: actions/checkout@v4
+      - name: 设置 Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: 检查翻译资源
+        run: node localization/check-resources.mjs
