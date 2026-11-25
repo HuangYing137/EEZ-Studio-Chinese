@@ -1,2 +1,46 @@
-# EEZ-Studio-Chinese
-Simplified Chinese localization of EEZ Studio, an open-source GUI design tool for LVGL and embedded systems. Providing a user-friendly Chinese interface while tracking upstream updates.
+# EEZ Studio 简体中文版
+
+本项目旨在基于官方开源项目 [EEZ Studio](https://github.com/eez-open/studio)，制作面向简体中文用户的本地化版本，降低使用门槛，并尽可能保持与官方版本同步。
+
+## 项目目标
+
+- 将 EEZ Studio 软件自身的菜单、工具栏、面板、属性、设置、对话框和提示信息等界面内容翻译为简体中文。
+- 建立统一、准确、可持续维护的中文术语表。
+- 保留程序标识符、变量名、函数名、枚举值、文件格式、生成代码和协议字段，不因界面翻译而改变软件行为。
+- 在完成源码分析和本地构建验证后，建立自动化构建流程，优先提供 Windows 64 位安装包。
+- 尽可能跟进官方 EEZ Studio 更新，并记录每个中文版本对应的上游版本。
+
+## 项目状态
+
+**当前阶段：源码调查与本地化方案研究。**
+
+目前已创建项目仓库，并开始检查官方源码结构。尚未完成软件界面汉化，也尚未发布可安装版本。项目进度和后续计划以本仓库的文档及发布记录为准。
+
+## 上游项目
+
+- 官方源码：[eez-open/studio](https://github.com/eez-open/studio)
+- 官方介绍：[EEZ Studio](https://www.envox.eu/studio/studio-introduction/)
+- 官方文档：[EEZ Studio 文档](https://www.envox.eu/eez-studio-docs/)
+
+本项目是社区本地化项目，并非 EEZ Studio 官方发布版本。EEZ Studio 由其原作者及贡献者开发；相关商标、版权和上游许可仍归其各自权利人所有。
+
+## 重要说明
+
+EEZ Studio 中的“项目多语言/文本资源”功能用于翻译用户所设计的 GUI 项目内容，不等同于 EEZ Studio 软件自身操作界面的语言切换。本项目的工作重点是软件自身界面的简体中文本地化。
+
+翻译时将区分“显示给用户的界面文字”和“程序内部使用的技术标识”。除非经过验证且确有必要，不修改内部标识、数据结构和项目文件格式。
+
+## 文档
+
+- [项目规划与实施路线](docs/项目规划.md)
+- 中文术语表：整理完成后补充
+- 构建与安装说明：完成构建验证后补充
+- 版本与更新记录：发布时补充
+
+## 参与与反馈
+
+欢迎通过 GitHub Issues 提交翻译建议、界面问题和使用反馈。提交问题时，请尽量附上软件版本、操作步骤及相关截图。
+
+## 许可证
+
+本仓库的项目说明和后续修改内容应遵循适用的开源许可要求。官方 EEZ Studio 当前源码使用 GPL-3.0-only；在分发基于其源码修改的版本时，将保留上游版权与许可声明，并按适用的 GPL 条款提供对应源码和许可文本。具体分发内容以实际采用的上游版本及文件许可证为准。
